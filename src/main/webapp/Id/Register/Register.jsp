@@ -45,16 +45,8 @@
                 <div class="card-body register-card-body">
                     <p class="login-box-msg">Đăng ký tài khoản</p>
 
-                    <form action="${pageContext.request.contextPath}/AddReg" method="post">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Tên Người Dùng" name="manv">
-                            <div class="input-group-append">
-                                <div class="input-group-text">
-
-                                </div>
-                            </div>
-                        </div>
-
+                    <form action="${pageContext.request.contextPath}/RegisterSevlet" method="post">
+                        
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Tài Khoản Đăng Nhập" name="username">
                             <div class="input-group-append">
@@ -83,7 +75,13 @@
                 </div>
 
                 <div class="row">
-                    ${mess}
+                    <div class="col-2">
+                    </div>
+                    <div class="col-8">
+                        ${mess}
+                    </div>
+                    <div class="col-2">
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-4">
@@ -101,7 +99,7 @@
 
 
                 <br>
-                <a href="${pageContext.request.contextPath}/login" class="text-center">Tôi đã có tài khoản</a>
+                <a href="${pageContext.request.contextPath}/Login/Login.jsp" class="text-center">Tôi đã có tài khoản</a>
                 <br>
             </div>
             <!-- /.form-box -->

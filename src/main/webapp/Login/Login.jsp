@@ -76,7 +76,7 @@
 
                     <br>
                     <p class="mb-0">
-                        <a href="${pageContext.request.contextPath}/register" class="text-center">Đăng ký tài khoản mới</a>
+                        <a href="${pageContext.request.contextPath}/Id/Register/Register.jsp" class="text-center">Đăng ký tài khoản mới</a>
                     </p>
                     <p class="mb-1">
                         <a href="forgot-password.html">Quên mật khẩu</a>
