@@ -9,11 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>ID 2Game Club</title>
     </head>
     <body>
         <footer class="main-footer">
-            <strong>Copyright &copy; 2020 <a href="http://shacojx.blogspot.com">Team InfoSec</a>.</strong>
+            <strong>Copyright &copy; 2021 <a href="https://2game.club">2Game Club</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 2.0
