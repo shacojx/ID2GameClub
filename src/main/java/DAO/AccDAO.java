@@ -90,6 +90,31 @@ public class AccDAO {
         }
         return rowCount;
     }
+    
+    public Account getAccByID(int id) throws SQLException {
+
+        try {
+
+            String query = "SELECT * FROM `tlbbdb`.`account` WHERE id=?;";
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setInt(1, id);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Account acc = new Account(id, rs.getString(2), rs.getString(3), rs.getString(6),
+                rs.getString(7),rs.getString(8), rs.getString(9));
+                return acc;
+            }
+
+        } catch (Exception ex) {
+            Logger.getLogger(AccDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            rs.close();
+            ps.close();
+            conn.close();
+        }
+        return null;
+    }
 
     public int Count() throws SQLException {
         try {

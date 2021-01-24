@@ -111,7 +111,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="${pageContext.request.contextPath}/Id/Profile/AddInfoSec.jsp" class="nav-link ${sec}">
+                                    <a href="${pageContext.request.contextPath}/CheckInfoSec" class="nav-link ${sec}">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Bảo Mật</p>
                                     </a>

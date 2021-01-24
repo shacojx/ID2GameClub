@@ -36,6 +36,10 @@
         <servlet-name>AddInfoSec</servlet-name>
         <servlet-class>Controller.AddInfoSec</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CheckInfoSec</servlet-name>
+        <servlet-class>Controller.CheckInfoSec</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegisterSevlet</servlet-name>
         <url-pattern>/RegisterSevlet</url-pattern>
@@ -71,6 +75,10 @@
     <servlet-mapping>
         <servlet-name>AddInfoSec</servlet-name>
         <url-pattern>/AddInfoSec</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckInfoSec</servlet-name>
+        <url-pattern>/CheckInfoSec</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
