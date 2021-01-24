@@ -44,6 +44,17 @@ public class Account {
         this.password = password;
     }
 
+    public Account(int id, String name, String password, String email, String phone, int point) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+        this.email = email;
+        this.phone = phone;
+        this.point = point;
+    }
+    
+    
+
     public Account(int id, String name, String password, int point, int score, String last_ip_login, Date date_registered, Date date_modified, int is_online, int is_lock) {
         this.id = id;
         this.name = name;

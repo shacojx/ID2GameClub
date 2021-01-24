@@ -52,10 +52,11 @@ public class Profile extends HttpServlet {
             }
             LoginDAO loginD = new LoginDAO();
             AES aes = new AES();
-            Account a = loginD.checkLogin(aes.decrypt(user), aes.decrypt(pass));
-            if (a == null) {
+            Account a = null;
+            if (loginD.checkLogin(aes.decrypt(user), aes.decrypt(pass)) == null) {
                 request.getRequestDispatcher("/Login/Login.jsp").forward(request, response);
             } else {
+                a = loginD.checkLogin(aes.decrypt(user), aes.decrypt(pass));
                 request.setAttribute("acc", a);
                 request.getRequestDispatcher("/Id/Profile/Profile.jsp").forward(request, response);
             }

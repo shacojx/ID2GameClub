@@ -56,7 +56,7 @@ public class CheckIndex extends HttpServlet {
             if(a == null){
                 response.sendRedirect("login");
             }else{
-                request.getRequestDispatcher("/Id/Profile/Profile.jsp").forward(request, response);
+                request.getRequestDispatcher("/Profile").forward(request, response);
             }
             
         } catch (SQLException ex) {

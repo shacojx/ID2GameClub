@@ -84,7 +84,7 @@
                             </div><!-- /.col -->
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-right">
-                                    <li class="breadcrumb-item"><a href="${pageContext.request.contextPath}/FRS/world.jsp">Trang chủ</a></li>
+                                    <li class="breadcrumb-item"><a href="${pageContext.request.contextPath}/Id/Profile/Profile.jsp">Trang chủ</a></li>
                                     <li class="breadcrumb-item active">Thông tin tài khoản</li>
                                 </ol>
                             </div><!-- /.col -->
@@ -102,8 +102,8 @@
                             <div class="card card-widget widget-user">
                                 <!-- Add the bg color to the header using any of the bg-* classes -->
                                 <div class="widget-user-header bg-info">
-                                    <h3 class="widget-user-username">${acc.fullName}</h3>
-                                    <h5 class="widget-user-desc">${acc.team} ${acc.work}</h5>
+                                    <h3 class="widget-user-username">${acc.name}</h3>
+                                    <h5 class="widget-user-desc"></h5>
                                 </div>
                                 <div class="widget-user-image">
                                     <img class="img-circle elevation-2" src="${pageContext.request.contextPath}/AdminLTE/dist/img/ano.png" alt="User Avatar">
@@ -112,7 +112,7 @@
                                     <div class="row">
                                         <div class="col-sm-3 border-right">
                                             <div class="description-block">
-                                                <h5 class="description-header">${acc.id}</h5>
+                                                <h5 class="description-header">${acc.name}</h5>
                                                 <span class="description-text">Tài Khoản</span>
                                             </div>
                                             <!-- /.description-block -->
@@ -128,7 +128,7 @@
                                         <!-- /.col -->
                                         <div class="col-sm-3">
                                             <div class="description-block">
-                                                <h5 class="description-header">${acc.birtday}</h5>
+                                                <h5 class="description-header">${acc.phone}</h5>
                                                 <span class="description-text">Số Điện Thoại</span>
                                             </div>
                                             <!-- /.description-block -->
@@ -137,7 +137,7 @@
 
                                         <div class="col-sm-3">
                                             <div class="description-block">
-                                                <h5 class="description-header">${acc.username}</h5>
+                                                <h5 class="description-header">${acc.point}</h5>
                                                 <span class="description-text">Point</span>
                                             </div>
                                             <!-- /.description-block -->
@@ -161,7 +161,7 @@
             <!-- /.content-wrapper -->
             <jsp:include page="../Menu/Footer.jsp" />
 
-            <!-- Control Sidebar -->
+            <!-- Control Siderrar -->
             <aside class="control-sidebar control-sidebar-dark">
                 <!-- Control sidebar content goes here -->
             </aside>
