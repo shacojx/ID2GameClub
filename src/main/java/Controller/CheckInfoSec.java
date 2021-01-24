@@ -59,8 +59,7 @@ public class CheckInfoSec extends HttpServlet {
                 request.getRequestDispatcher("/Login/Login.jsp").forward(request, response);
             } else {
                 a = loginD.checkLogin(aes.decrypt(user), aes.decrypt(pass));
-                Account b = accd.getAccByID(a.getId());
-                System.out.println("B: " + b.getEmail() + b.getPhone() + b.getQuestion() + b.getAnswer());
+                Account b = accd.getAccByID(a.getId());      
                 if (b.getEmail().length() == 0 || b.getPhone().length() == 0
                         || b.getQuestion().length() == 0 || b.getAnswer().length() == 0) {
                     request.getRequestDispatcher("/Id/Profile/AddInfoSec.jsp").forward(request, response);

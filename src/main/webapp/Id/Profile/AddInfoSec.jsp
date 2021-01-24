@@ -5,6 +5,7 @@
 --%>
 
 
+<%@page import="DAO.AccDAO"%>
 <%@page import="Function.AES"%>
 <%@page import="DAO.LoginDAO"%>
 <%@page import="java.util.List"%>
@@ -59,6 +60,7 @@
                 }
             }
             LoginDAO loginD = new LoginDAO();
+            AccDAO accd = new AccDAO();
             AES aes = new AES();
             String contextPath = request.getContextPath();
             String ulogin = "";
@@ -68,16 +70,19 @@
             } else {
                 a = loginD.checkLogin(aes.decrypt(user), aes.decrypt(pass));
                 ulogin = aes.decrypt(user);
-
             }
-
+            Account b = accd.getAccByID(a.getId());
+            if (b.getEmail().length() != 0 || b.getPhone().length() != 0
+                        || b.getQuestion().length() != 0 || b.getAnswer().length() != 0) {
+                    request.getRequestDispatcher("/View/403.jsp").forward(request, response);
+                }
 
         %>
         <c:set var = "info1" scope = "request" value = "menu-open"/>
         <c:set var = "info2" scope = "request" value = "active"/>
         <c:set var = "sec" scope = "request" value = "active"/>
         <div class="wrapper">
-            
+
             <jsp:include page="../Menu/Menu.jsp" />
 
             <!-- Content Wrapper. Contains page content -->
@@ -113,11 +118,11 @@
                                         <h3 class="card-title">Thêm Thông Tin Bảo Mật</h3>
                                     </div>
                                     <!-- /.card-header -->
-                                    
+
                                     <!-- form start -->
                                     <form role="form" action="${pageContext.request.contextPath}/AddInfoSec" method="post">
                                         <div class="card-body">
-                                            
+
                                             <div class="form-group">
                                                 <label for="exampleInputPassword1">Email</label>
                                                 <input name="email" type="text" class="form-control" id="exampleInputFile">
