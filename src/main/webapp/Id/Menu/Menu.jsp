@@ -3,6 +3,8 @@
     Created on : Oct 27, 2020, 1:29:18 AM
     Author     : shacojx
 --%>
+<%@page import="Function.AES"%>
+<%@page import="DAO.LoginDAO"%>
 <%@page import="Entity.Account"%>
 
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -15,7 +17,32 @@
 
     </head>
     <body>
-        
+        <%
+            Cookie[] listCookie = request.getCookies();
+            String user = "";
+            String pass = "";
+            for (Cookie o : listCookie) {
+                if (o.getName().equals("mu")) {
+                    user = o.getValue();
+                }
+                if (o.getName().equals("sa")) {
+                    pass = o.getValue();
+                }
+            }
+            LoginDAO loginD = new LoginDAO();
+            AES aes = new AES();
+            String contextPath = request.getContextPath();
+            String ulogin = "";
+            Account a = null;
+            if (loginD.checkLogin(aes.decrypt(user), aes.decrypt(pass)) == null) {
+                response.sendRedirect(contextPath + "/Login/Login.jsp");
+            } else {
+                a = loginD.checkLogin(aes.decrypt(user), aes.decrypt(pass));
+                ulogin = aes.decrypt(user);
+            }
+
+
+        %>
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
@@ -24,10 +51,10 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="${pageContext.request.contextPath}/World" class="nav-link">Home</a>
+                    <a href="${pageContext.request.contextPath}/World" class="nav-link">Trang chủ</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="${pageContext.request.contextPath}/FRS/Contact/Contact.jsp" class="nav-link">Contact</a>
+                    <a href="${pageContext.request.contextPath}/FRS/Contact/Contact.jsp" class="nav-link">Liên Lạc</a>
                 </li>
             </ul>
             <!-- Right navbar links -->

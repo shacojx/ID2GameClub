@@ -56,6 +56,8 @@ public class Account {
         this.is_online = is_online;
         this.is_lock = is_lock;
     }
+    
+    
 
 
     public Account(int id, String name, String password, String encode, String pin, String question, String answer, String email, String phone, String qq, String tel, String address, String id_card, int point, int score, String last_ip_login, Date date_registered, Date date_modified, int is_online, int is_lock) {

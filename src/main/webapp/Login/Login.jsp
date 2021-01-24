@@ -36,9 +36,9 @@
                 <div class="card-body login-card-body">
                     <p class="login-box-msg">Đăng nhập</p>
 
-                    <form action="${pageContext.request.contextPath}/Authen" method="post">
+                    <form action="${pageContext.request.contextPath}/Authentication" method="post">
                         <div class="input-group mb-3">
-                            <input name="uname" type="text" class="form-control" placeholder="Tài Khoản">
+                            <input name="username" type="text" class="form-control" placeholder="Tài Khoản">
                             <div class="input-group-append">
                                 <div class="input-group-text">
                                     <span class="fas fa-user"></span>
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <div class="input-group mb-3">
-                            <input name="passwd" type="password" class="form-control" placeholder="Mật Khẩu">
+                            <input name="password" type="password" class="form-control" placeholder="Mật Khẩu">
                             <div class="input-group-append">
                                 <div class="input-group-text">
                                     <span class="fas fa-lock"></span>

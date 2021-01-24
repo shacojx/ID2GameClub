@@ -13,8 +13,7 @@ import org.apache.commons.codec.digest.DigestUtils;
  */
 public class MD5Encrypt {
     public String md5(String passwd) {
-        String md5HexPass = DigestUtils
-                .md5Hex(passwd);
+        String md5HexPass = DigestUtils.md5Hex(passwd);
         return md5HexPass;
     }
 }

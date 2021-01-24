@@ -55,8 +55,8 @@
                             </div><!-- /.col -->
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-right">
-                                    <li class="breadcrumb-item"><a href="${pageContext.request.contextPath}/FRS/world.jsp">Home</a></li>
-                                    <li class="breadcrumb-item active">Profile</li>
+                                    <li class="breadcrumb-item"><a href="${pageContext.request.contextPath}/FRS/world.jsp">Trang chủ</a></li>
+                                    <li class="breadcrumb-item active">Thông tin tài khoản</li>
                                 </ol>
                             </div><!-- /.col -->
                         </div><!-- /.row -->
@@ -81,15 +81,15 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="row">
-                                        <div class="col-sm-2 border-right">
+                                        <div class="col-sm-3 border-right">
                                             <div class="description-block">
                                                 <h5 class="description-header">${acc.id}</h5>
-                                                <span class="description-text">MÃ NHÂN SỰ</span>
+                                                <span class="description-text">Tài Khoản</span>
                                             </div>
                                             <!-- /.description-block -->
                                         </div>
                                         <!-- /.col -->
-                                        <div class="col-sm-2 border-right">
+                                        <div class="col-sm-3 border-right">
                                             <div class="description-block">
                                                 <h5 class="description-header">${acc.email}</h5>
                                                 <span class="description-text">EMAIL</span>
@@ -97,38 +97,24 @@
                                             <!-- /.description-block -->
                                         </div>
                                         <!-- /.col -->
-                                        <div class="col-sm-2">
+                                        <div class="col-sm-3">
                                             <div class="description-block">
                                                 <h5 class="description-header">${acc.birtday}</h5>
-                                                <span class="description-text">NGÀY SINH</span>
+                                                <span class="description-text">Số Điện Thoại</span>
                                             </div>
                                             <!-- /.description-block -->
                                         </div>
                                         <!-- /.col -->
-                                        <div class="col-sm-2">
-                                            <div class="description-block">
-                                                <h5 class="description-header">${acc.sex}</h5>
-                                                <span class="description-text">GIỚI TÍNH</span>
-                                            </div>
-                                            <!-- /.description-block -->
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-sm-2">
+                                        
+                                        <div class="col-sm-3">
                                             <div class="description-block">
                                                 <h5 class="description-header">${acc.username}</h5>
-                                                <span class="description-text">USERNAME</span>
+                                                <span class="description-text">Point</span>
                                             </div>
                                             <!-- /.description-block -->
                                         </div>
                                         <!-- /.col -->
-                                        <div class="col-sm-2">
-                                            <div class="description-block">
-                                                <h5 class="description-header">${acc.team}</h5>
-                                                <span class="description-text">TEAM</span>
-                                            </div>
-                                            <!-- /.description-block -->
-                                        </div>
-                                        <!-- /.col -->
+                                        
                                     </div>
                                     <!-- /.row -->
                                 </div>
