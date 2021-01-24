@@ -52,6 +52,17 @@ public class Account {
         this.phone = phone;
         this.point = point;
     }
+
+    public Account(int id, String name, String password, String question, String answer, String email, String phone) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+        this.question = question;
+        this.answer = answer;
+        this.email = email;
+        this.phone = phone;
+    }
+    
     
     
 

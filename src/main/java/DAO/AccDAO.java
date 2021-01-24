@@ -61,6 +61,35 @@ public class AccDAO {
         }
         return rowCount;
     }
+    
+    public int Update(Account a) throws SQLException {
+        int rowCount = 0;
+        try {
+            String query = "UPDATE `tlbbdb`.`account` SET email = ?, phone = ?, question = ?, answer = ? WHERE id=?;";
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+
+            ps.setString(1, a.getEmail());
+            ps.setString(2, a.getPhone());
+            ps.setString(3, a.getQuestion());
+            ps.setString(4, a.getAnswer());
+            ps.setInt(5, a.getId());
+
+            rowCount = ps.executeUpdate();
+            rs = ps.getGeneratedKeys();
+
+            return rowCount;
+        } catch (Exception ex) {
+            Logger.getLogger(AccDAO.class.getName()).log(Level.SEVERE, null, ex);
+
+        } finally {
+            rs.close();
+            ps.close();
+            conn.close();
+        }
+        return rowCount;
+    }
 
     public int Count() throws SQLException {
         try {
