@@ -95,8 +95,8 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                              with font-awesome or any other icon font library -->
-                        <li class="nav-item has-treeview ${dash1}">
-                            <a href="#" class="nav-link ${dash2}">
+                        <li class="nav-item has-treeview ${info1}">
+                            <a href="#" class="nav-link ${info2}">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Thông tin
@@ -105,13 +105,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="${pageContext.request.contextPath}/FRS/world.jsp" class="nav-link ${worlddash}">
+                                    <a href="${pageContext.request.contextPath}/FRS/world.jsp" class="nav-link ${profile}">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tài Khoản</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="${pageContext.request.contextPath}/FRS/index.jsp" class="nav-link ${fundash}">
+                                    <a href="${pageContext.request.contextPath}/FRS/index.jsp" class="nav-link ${sec}">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Bảo Mật</p>
                                     </a>

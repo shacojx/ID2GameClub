@@ -69,6 +69,9 @@
 
 
         %>
+        <c:set var = "info1" scope = "request" value = "menu-open"/>
+        <c:set var = "info2" scope = "request" value = "active"/>
+        <c:set var = "profile" scope = "request" value = "active"/>
         <div class="wrapper">
 
             <jsp:include page="../Menu/Menu.jsp" />
