@@ -138,6 +138,12 @@
                                 <li class="nav-item">
                                     <a href="${pageContext.request.contextPath}/FRS/AddVulns/AddVulnsFun.jsp" class="nav-link ${addfun}">
                                         <i class="far fa-circle nav-icon"></i>
+                                        <p>Đổi Điểm</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="${pageContext.request.contextPath}/FRS/AddVulns/AddVulnsFun.jsp" class="nav-link ${addfun}">
+                                        <i class="far fa-circle nav-icon"></i>
                                         <p>Lịch Sử Nạp</p>
                                     </a>
                                 </li>

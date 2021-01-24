@@ -145,12 +145,17 @@
                                         <div class="btn-group-vertical">
                                             <button type="button" class="btn btn-info">1000 point = 10.000 vnđ</button><br>
                                             <button type="button" class="btn btn-info">2000 point = 20.000 vnđ</button><br>
-                                            <button type="button" class="btn btn-info">5000 point = 50.000 vnđ</button><br>
+                                            <button type="button" class="btn btn-info">3000 point = 30.000 vnđ</button><br>
                                         </div>
                                         <div class="btn-group-vertical">
+                                            <button type="button" class="btn btn-info">5000 point = 50.000 vnđ</button><br>
                                             <button type="button" class="btn btn-info">10.000 point = 100.000 vnđ</button><br>
                                             <button type="button" class="btn btn-info">20.000 point = 200.000 vnđ</button><br>
+                                        </div>
+                                        <div class="btn-group-vertical">
+                                            <button type="button" class="btn btn-info">30.000 point = 300.000 vnđ</button><br>
                                             <button type="button" class="btn btn-info">50.000 point = 500.000 vnđ</button><br>
+                                            <button type="button" class="btn btn-info">100.000 point = 1.000.000 vnđ</button><br>
                                         </div>
 
                                         <br>
