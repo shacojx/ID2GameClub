@@ -120,8 +120,8 @@
                             </ul>
                         </li>
  
-                        <li class="nav-item has-treeview ${addvulns1}">
-                            <a href="#" class="nav-link ${addvulns2}">
+                        <li class="nav-item has-treeview ${pay1}">
+                            <a href="#" class="nav-link ${pay2}">
                                 <i class="nav-icon fas fa-chart-pie"></i>
                                 <p>
                                     Nạp Thẻ
@@ -130,7 +130,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="${pageContext.request.contextPath}/VulnsAddw" class="nav-link ${addworld}">
+                                    <a href="${pageContext.request.contextPath}/Payment/nap.jsp" class="nav-link ${nap}">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Nạp Thẻ</p>
                                     </a>
