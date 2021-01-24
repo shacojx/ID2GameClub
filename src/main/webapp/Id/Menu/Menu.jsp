@@ -86,7 +86,7 @@
                         <img src="${pageContext.request.contextPath}/AdminLTE/dist/img/ano.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="${pageContext.request.contextPath}/Profile" class="d-block">User</a>
+                        <a href="${pageContext.request.contextPath}/Profile" class="d-block"><%=ulogin%></a>
                     </div>
                 </div>
 

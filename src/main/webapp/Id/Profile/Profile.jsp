@@ -4,12 +4,15 @@
     Author     : ShacoJX
 --%>
 
+<%@page import="Entity.Account"%>
+<%@page import="Function.AES"%>
+<%@page import="DAO.LoginDAO"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>ID 2Game Club</title>
@@ -36,10 +39,36 @@
         <!-- Google Font: Source Sans Pro -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
-        
+
     </head>
     <body class="hold-transition sidebar-mini layout-fixed">
-        
+        <%
+            Cookie[] listCookie = request.getCookies();
+            String user = "";
+            String pass = "";
+            for (Cookie o : listCookie) {
+                if (o.getName().equals("mu")) {
+                    user = o.getValue();
+                }
+                if (o.getName().equals("sa")) {
+                    pass = o.getValue();
+                }
+            }
+            LoginDAO loginD = new LoginDAO();
+            AES aes = new AES();
+            String contextPath = request.getContextPath();
+            String ulogin = "";
+            Account a = null;
+            if (loginD.checkLogin(aes.decrypt(user), aes.decrypt(pass)) == null) {
+                response.sendRedirect(contextPath + "/Login/Login.jsp");
+            } else {
+                a = loginD.checkLogin(aes.decrypt(user), aes.decrypt(pass));
+                ulogin = aes.decrypt(user);
+
+            }
+
+
+        %>
         <div class="wrapper">
 
             <jsp:include page="../Menu/Menu.jsp" />
@@ -105,7 +134,7 @@
                                             <!-- /.description-block -->
                                         </div>
                                         <!-- /.col -->
-                                        
+
                                         <div class="col-sm-3">
                                             <div class="description-block">
                                                 <h5 class="description-header">${acc.username}</h5>
@@ -114,7 +143,7 @@
                                             <!-- /.description-block -->
                                         </div>
                                         <!-- /.col -->
-                                        
+
                                     </div>
                                     <!-- /.row -->
                                 </div>
