@@ -51,7 +51,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="${pageContext.request.contextPath}/World" class="nav-link">Trang chủ</a>
+                    <a href="${pageContext.request.contextPath}/Profile" class="nav-link">Trang chủ</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="${pageContext.request.contextPath}/FRS/Contact/Contact.jsp" class="nav-link">Liên Lạc</a>
@@ -72,7 +72,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="${pageContext.request.contextPath}/FRS/world.jsp" class="brand-link">
+            <a href="${pageContext.request.contextPath}/Profile" class="brand-link">
                 <img src="${pageContext.request.contextPath}/AdminLTE/dist/img/ano.png" alt="ID 2Game Logo" class="brand-image img-circle elevation-3"
                      style="opacity: .8">
                 <span class="brand-text font-weight-light">ID 2Game Club</span>
@@ -105,13 +105,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="${pageContext.request.contextPath}/FRS/world.jsp" class="nav-link ${profile}">
+                                    <a href="${pageContext.request.contextPath}/Profile" class="nav-link ${profile}">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tài Khoản</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="${pageContext.request.contextPath}/FRS/index.jsp" class="nav-link ${sec}">
+                                    <a href="${pageContext.request.contextPath}/Id/Profile/AddInfoSec.jsp" class="nav-link ${sec}">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Bảo Mật</p>
                                     </a>
