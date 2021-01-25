@@ -119,25 +119,16 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Loại Thẻ</label>
-                                            <select name="questions" id="country" class="form-control">
+                                            <select name="cardtype" id="country" class="form-control">
                                                 <option>--- Chọn ---</option>
-                                                <option>Viettel</option>
-                                                <option>VinaPhone</option>
-                                                <option>Mobifone</option>
-                                                <option>Vietnamobile</option>
-                                                <option>Zing</option>
-                                                <option>FunCard</option>
-                                                <option>Vcoin</option>
-                                                <option>Appota</option>
-                                                <option>Gate</option>
-                                                <option>Garena</option>
-                                                <option>Appota</option>
-                                                <option>Megacard</option>
-                                                <option>Oncash</option>
+                                                <option value="VT">Viettel</option>
+                                                <option value="Vina">VinaPhone</option>
+                                                <option value="Mobi">Mobifone</option>
+
 
                                             </select>
                                         </div>
-                                        
+
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Mệnh Giá</label>
                                         </div>
@@ -161,11 +152,11 @@
                                         <br>
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Số Seri</label>
-                                            <input name="email" type="text" class="form-control" id="exampleInputFile">
+                                            <input name="seri" type="text" class="form-control" id="exampleInputFile">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Mã Thẻ</label>
-                                            <input name="email" type="text" class="form-control" id="exampleInputFile">
+                                            <input name="mathe" type="text" class="form-control" id="exampleInputFile">
                                         </div>
 
 
