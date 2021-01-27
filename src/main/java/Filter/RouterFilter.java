@@ -113,7 +113,7 @@ public class RouterFilter implements Filter {
         HttpServletResponse httpRespond = (HttpServletResponse) response;
         String url = httpRequest.getServletPath();
         String contextPath = httpRequest.getContextPath();
-        if (url.endsWith(".jsp")) {
+        if (url.endsWith(".jsp") && url.endsWith("Register.jsp") == false) {
             try {
                 Cookie[] listCookie = httpRequest.getCookies();
                 String user = "";
