@@ -119,15 +119,17 @@
 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Loại Thẻ</label>
-                                            <select name="cardtype" id="country" class="form-control">
-                                                <option>--- Chọn ---</option>
-                                                <option value="VT">Viettel</option>
-                                                <option value="Vina">VinaPhone</option>
-                                                <option value="Mobi">Mobifone</option>
 
-
-                                            </select>
                                         </div>
+                                        <label class="radio-inline" style="padding-right: 5%;">
+                                            <input type="radio" name="cardtype" checked value="VT">&nbsp;&nbsp;Viettel <img src="${pageContext.request.contextPath}/images/viettel.jpg" style="height: 50px;"/>
+                                        </label>
+                                        <label class="radio-inline" style="padding-right: 5%;">
+                                            <input type="radio" name="cardtype" value="Vina">&nbsp;&nbsp;VinaPhone <img src="${pageContext.request.contextPath}/images/vinaphone.jpg" style="height: 50px;"/>
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="cardtype" value="Mobi">&nbsp;&nbsp;MobiFone <img src="${pageContext.request.contextPath}/images/mobifone.jpg" style="height: 50px;"/>
+                                        </label>
 
                                         <div class="form-group">
                                             <label for="exampleInputPassword1">Mệnh Giá</label>
