@@ -22,11 +22,12 @@ public class CallApiNap {
 
     public void nap(int amount, String cardtype, String seri, String mathe) {
         try {
+            MD5Encrypt md5 = new MD5Encrypt();
             String host = "https://xxx.com/partner/RequestPayment";
-            String signature = "65ddceda0b55f270bdd4bef1dd04925c";
             String transid = "xxxx";
             String apiToken = "xxx";
             String urlCallBack = "xxx";
+            String signature = md5.md5(apiToken+mathe+seri);
 
             MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
             RequestBody body = RequestBody.create(mediaType, "CardSeri=" + seri + "&CardCode=" + mathe + "&Amount=" + amount + "&Signature=" + signature + "&TransID=" + transid + "&CardType=" + cardtype + "&ApiToken=" + apiToken + "&UrlCallBack=" + urlCallBack);

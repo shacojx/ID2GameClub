@@ -36,9 +36,10 @@ public class NapThe extends HttpServlet {
             String cardtype = request.getParameter("cardtype");
             String seri = request.getParameter("Seri");
             String mathe = request.getParameter("mathe");
-            
+            String menhgia = request.getParameter("menhgia");
+            int mount = Integer.parseInt(menhgia);
             CallApiNap napthe = new CallApiNap();
-            napthe.nap(0, cardtype, seri, mathe);
+            napthe.nap(mount, cardtype, seri, mathe);
             
         }
     }

@@ -136,33 +136,33 @@
                                         </div>
 
                                         <label class="radio-inline" style="padding-right: 5%;">
-                                            <input type="radio" name="cardtype" checked value="VT">&nbsp;&nbsp;<button type="button" class="btn btn-info">1000 point = 10.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                            <input type="radio" name="menhgia" checked value="10000">&nbsp;&nbsp;<button type="button" class="btn btn-info">1000 point = 10.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                                         </label>
                                         <label class="radio-inline" style="padding-right: 5%;">
-                                            <input type="radio" name="cardtype" value="Vina">&nbsp;&nbsp;<button type="button" class="btn btn-info">2000 point = 20.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                            <input type="radio" name="menhgia" value="20000">&nbsp;&nbsp;<button type="button" class="btn btn-info">2000 point = 20.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                                         </label>
                                         <label class="radio-inline">
-                                            <input type="radio" name="cardtype" value="Mobi">&nbsp;&nbsp;<button type="button" class="btn btn-info">3000 point = 30.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                            <input type="radio" name="menhgia" value="30000">&nbsp;&nbsp;<button type="button" class="btn btn-info">3000 point = 30.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                                         </label>
                                         <br>
                                         <label class="radio-inline" style="padding-right: 5%;">
-                                            <input type="radio" name="cardtype" alue="VT">&nbsp;&nbsp;<button type="button" class="btn btn-info">5000 point = 50.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                            <input type="radio" name="menhgia" alue="50000">&nbsp;&nbsp;<button type="button" class="btn btn-info">5000 point = 50.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                                         </label>
                                         <label class="radio-inline" style="padding-right: 5%;">
-                                            <input type="radio" name="cardtype" value="Vina">&nbsp;&nbsp;<button type="button" class="btn btn-info">10.000 point = 100.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                            <input type="radio" name="menhgia" value="100000">&nbsp;&nbsp;<button type="button" class="btn btn-info">10.000 point = 100.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                                         </label>
                                         <label class="radio-inline">
-                                            <input type="radio" name="cardtype" value="Mobi">&nbsp;&nbsp;<button type="button" class="btn btn-info">20.000 point = 200.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                            <input type="radio" name="menhgia" value="200000">&nbsp;&nbsp;<button type="button" class="btn btn-info">20.000 point = 200.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                                         </label>
                                         <br>
                                        <label class="radio-inline" style="padding-right: 5%;">
-                                            <input type="radio" name="cardtype" alue="VT">&nbsp;&nbsp;<button type="button" class="btn btn-info">30.000 point = 300.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                            <input type="radio" name="menhgia" alue="300000">&nbsp;&nbsp;<button type="button" class="btn btn-info">30.000 point = 300.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                                         </label>
                                         <label class="radio-inline" style="padding-right: 5%;">
-                                            <input type="radio" name="cardtype" value="Vina">&nbsp;&nbsp;<button type="button" class="btn btn-info">50.000 point = 500.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                            <input type="radio" name="menhgia" value="500000">&nbsp;&nbsp;<button type="button" class="btn btn-info">50.000 point = 500.000 vnđ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                                         </label>
                                         <label class="radio-inline">
-                                            <input type="radio" name="cardtype" value="Mobi">&nbsp;&nbsp;<button type="button" class="btn btn-info">100.000 point = 1.000.000 vnđ</button>
+                                            <input type="radio" name="menhgia" value="1000000">&nbsp;&nbsp;<button type="button" class="btn btn-info">100.000 point = 1.000.000 vnđ</button>
                                         </label>
                                        
 
