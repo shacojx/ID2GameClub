@@ -21,7 +21,7 @@ public class DBContext {
     private final String dbName = "tlbbdb";
     
     public Connection getConnection() throws ClassNotFoundException, SQLException{
-        String url = "jdbc:mysql://" + serverName + ":"  + portNumber +"/" + dbName  + "?useUnicode=true&characterEncoding=UTF-8";
+        String url = "jdbc:mysql://" + serverName + ":"  + portNumber +"/" + dbName  + "?useUnicode=true&characterEncoding=UTF-8&useTimezone=true&serverTimezone=GMT%2B7";
         Class.forName("com.mysql.jdbc.Driver");
         return DriverManager.getConnection(url,userID,passwd);
     }
