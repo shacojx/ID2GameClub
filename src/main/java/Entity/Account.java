@@ -44,6 +44,13 @@ public class Account {
         this.password = password;
     }
 
+    public Account(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
+    
+    
+
     public Account(int id, String name, String password, String email, String phone, int point) {
         this.id = id;
         this.name = name;

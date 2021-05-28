@@ -103,6 +103,32 @@ public class AccDAO {
         return rowCount;
     }
     
+    public int UpdatePass(Account a) throws SQLException {
+        int rowCount = 0;
+        try {
+            String query = "UPDATE `tlbbdb`.`account` SET `password` = ? WHERE `name`=?;";
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+
+            ps.setString(1, a.getPassword());
+            ps.setString(2, a.getName());
+
+            rowCount = ps.executeUpdate();
+            rs = ps.getGeneratedKeys();
+
+            return rowCount;
+        } catch (Exception ex) {
+            Logger.getLogger(AccDAO.class.getName()).log(Level.SEVERE, null, ex);
+
+        } finally {
+            rs.close();
+            ps.close();
+            conn.close();
+        }
+        return rowCount;
+    }
+    
     public Account getAccByID(int id) throws SQLException {
 
         try {

@@ -114,7 +114,7 @@
                         </li>
           
                         <li class="nav-item">
-                            <a href="${pageContext.request.contextPath}/FRS/Profile/ChangePass.jsp" class="nav-link">
+                            <a href="${pageContext.request.contextPath}/Id/Profile/ChangePass.jsp" class="nav-link">
                                 <i class="fas fa-circle nav-icon"></i>
                                 <p>Đổi mật khẩu</p>
                             </a>
