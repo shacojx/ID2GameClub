@@ -26,7 +26,7 @@
         </style>
     </head>
     <body class="hold-transition login-page">
-        
+
         <div class="login-box">
             <div class="login-logo">
                 <b>ID</b> 2Game Club
@@ -34,6 +34,7 @@
             <!-- /.login-logo -->
             <div class="card">
                 <div class="card-body login-card-body">
+                   
                     <p class="login-box-msg">Đăng nhập</p>
 
                     <form action="${pageContext.request.contextPath}/Authentication" method="post">

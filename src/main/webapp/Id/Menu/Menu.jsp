@@ -54,7 +54,7 @@
                     <a href="${pageContext.request.contextPath}/Profile" class="nav-link">Trang chủ</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="${pageContext.request.contextPath}/FRS/Contact/Contact.jsp" class="nav-link">Liên Lạc</a>
+                    <a href="https://www.facebook.com/tlbb.2game/" class="nav-link">Liên Lạc</a>
                 </li>
             </ul>
             <!-- Right navbar links -->
@@ -73,7 +73,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="${pageContext.request.contextPath}/Profile" class="brand-link">
-                <img src="${pageContext.request.contextPath}/AdminLTE/dist/img/ano.png" alt="ID 2Game Logo" class="brand-image img-circle elevation-3"
+                <img src="${pageContext.request.contextPath}/AdminLTE/dist/img/kh.jpg" alt="ID 2Game Logo" class="brand-image img-circle elevation-3"
                      style="opacity: .8">
                 <span class="brand-text font-weight-light">ID 2Game Club</span>
             </a>
@@ -83,7 +83,7 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="${pageContext.request.contextPath}/AdminLTE/dist/img/ano.png" class="img-circle elevation-2" alt="User Image">
+                        <img src="${pageContext.request.contextPath}/AdminLTE/dist/img/kh.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
                         <a href="${pageContext.request.contextPath}/Profile" class="d-block"><%=ulogin%></a>
@@ -109,49 +109,10 @@
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tài Khoản</p>
                                     </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="${pageContext.request.contextPath}/CheckInfoSec" class="nav-link ${sec}">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Bảo Mật</p>
-                                    </a>
-                                </li>
-
+                                </li>                   
                             </ul>
                         </li>
- 
-                        <li class="nav-item has-treeview ${pay1}">
-                            <a href="#" class="nav-link ${pay2}">
-                                <i class="nav-icon fas fa-chart-pie"></i>
-                                <p>
-                                    Nạp Thẻ
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="${pageContext.request.contextPath}/Payment/nap.jsp" class="nav-link ${nap}">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Nạp Thẻ</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="${pageContext.request.contextPath}/FRS/AddVulns/AddVulnsFun.jsp" class="nav-link ${addfun}">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Đổi Điểm</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="${pageContext.request.contextPath}/FRS/AddVulns/AddVulnsFun.jsp" class="nav-link ${addfun}">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Lịch Sử Nạp</p>
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                        </li>       
-
-                        
+          
                         <li class="nav-item">
                             <a href="${pageContext.request.contextPath}/FRS/Profile/ChangePass.jsp" class="nav-link">
                                 <i class="fas fa-circle nav-icon"></i>

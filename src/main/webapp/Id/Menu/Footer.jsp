@@ -13,7 +13,7 @@
     </head>
     <body>
         <footer class="main-footer">
-            <strong>Copyright &copy; 2021 <a href="https://2game.club">2Game Club</a>.</strong>
+            <strong>Copyright &copy; <a href="https://www.facebook.com/tlbb.2game/">2Game Club</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 2.0

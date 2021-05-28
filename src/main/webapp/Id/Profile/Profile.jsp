@@ -109,7 +109,7 @@
                                     <h5 class="widget-user-desc"></h5>
                                 </div>
                                 <div class="widget-user-image">
-                                    <img class="img-circle elevation-2" src="${pageContext.request.contextPath}/AdminLTE/dist/img/ano.png" alt="User Avatar">
+                                    <img class="img-circle elevation-2" src="${pageContext.request.contextPath}/AdminLTE/dist/img/kh.jpg" alt="User Avatar">
                                 </div>
                                 <div class="card-footer">
                                     <div class="row">

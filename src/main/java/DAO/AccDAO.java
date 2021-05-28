@@ -31,22 +31,34 @@ public class AccDAO {
         try {
 
             String query = "INSERT INTO `tlbbdb`.`account` "
-                    + "(`id`, `name`, `password`, `point`, `score`, `last_ip_login`, `date_registered`,"
+                    + "(`id`, `name`, `password`,`encode`,`pin`,`question`,"
+                    + "`answer`,`email`,`phone`,`qq`,`tel`,`address`,`id_card`, `point`, `score`, `last_ip_login`, `date_registered`,"
                     + "`date_modified`, `is_online`, `is_lock`) "
-                    + "VALUES (?, ?,?,?,?,?,?,?,?,?)";
+                    + "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             conn = new DBContext().getConnection();
             ps = conn.prepareStatement(query);
             ps = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, acc.getId());
             ps.setString(2, acc.getName());
             ps.setString(3, acc.getPassword());
-            ps.setInt(4, acc.getPoint());
-            ps.setInt(5, acc.getScore());
-            ps.setString(6, acc.getLast_ip_login());
-            ps.setDate(7, acc.getDate_registered());
-            ps.setDate(8, acc.getDate_modified());
-            ps.setInt(9, acc.getIs_online());
-            ps.setInt(10, acc.getIs_lock());
+            ps.setString(4, acc.getEncode());
+            ps.setString(5, acc.getPin());
+            ps.setString(6, acc.getQuestion());
+            ps.setString(7, acc.getAnswer());
+            ps.setString(8, acc.getEmail());
+            ps.setString(9, acc.getPhone());
+            ps.setString(10, acc.getQq());
+            ps.setString(11, acc.getTel());
+            ps.setString(12, acc.getAddress());
+            ps.setString(13, acc.getId_card());
+            ps.setInt(14, acc.getPoint());
+            ps.setInt(15, acc.getScore());
+            ps.setString(16, acc.getLast_ip_login());
+            ps.setDate(17, acc.getDate_registered());
+            ps.setDate(18, acc.getDate_modified());
+            ps.setInt(19, acc.getIs_online());
+            ps.setInt(20, acc.getIs_lock());
+            
             rowCount = ps.executeUpdate();
             rs = ps.getGeneratedKeys();
 

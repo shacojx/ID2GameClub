@@ -61,10 +61,11 @@ public class RegisterSevlet extends HttpServlet {
                 AccDAO accd = new AccDAO();
                 String pass_md5 = md5.md5(password);
                 int id = accd.Count() + 1;
-                Account acc = new Account(id, username, pass_md5, 0, 0, "127.0.0.1",date_r , date_r, 0,0);
+                Account acc = new Account(id, username, pass_md5,"5yr9DqKxGro=","123456","","",
+                        "","","","","","",0, 0, "127.0.0.1",date_r , date_r, 0,0);
                 accd.insertAcc(acc);
                 request.setAttribute("mess", "<p style=\"color: #3ac33ad1;\">Đăng ký Thành Công</p>");
-                request.getRequestDispatcher("/Id/Register/Register.jsp").forward(request, response);
+                request.getRequestDispatcher("/Login/Login.jsp").forward(request, response);
             }
         } catch (SQLException ex) {
             Logger.getLogger(RegisterSevlet.class.getName()).log(Level.SEVERE, null, ex);

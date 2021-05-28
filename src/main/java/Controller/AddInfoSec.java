@@ -63,12 +63,13 @@ public class AddInfoSec extends HttpServlet {
                 String questions = request.getParameter("questions");
                 String answer = request.getParameter("answer");
                 if (email.trim().length() == 0 || phone.trim().length() == 0 || questions.trim().length() == 0
-                        || answer.trim().length() == 0 || questions.equalsIgnoreCase("--- Chọn ---")) {
+                        || answer.trim().length() == 0 || questions.equalsIgnoreCase("--- Chọn ---") 
+                        || email == null || phone == null || questions == null || answer == null) {
                     request.setAttribute("mess", "<p style=\"color: red;\">Thêm thông tin bảo mật Thất Bại, Không được bỏ trống các ô</p>");
                     request.getRequestDispatcher("/Id/Profile/AddInfoSec.jsp").forward(request, response);
                 } else {
                     AccDAO accd = new AccDAO();
-                    Account b = new Account(a.getId(), a.getName(), a.getPassword(), questions, answer, email, phone);
+                    Account b = new Account(a.getId(), questions, answer, email, phone);
                     accd.Update(b);
                     request.setAttribute("mess", "<p style=\"color: #3ac33ad1;\">Thêm thông tin bảo mật Thành Công</p>");
                     request.getRequestDispatcher("/Id/Profile/AddInfoSec.jsp").forward(request, response);
